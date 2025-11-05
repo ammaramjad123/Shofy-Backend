@@ -41,9 +41,7 @@ exports.getAllProductsService = async () => {
 };
 
 // get type of product service
-exports.getProductTypeService = async (req) => {
-  const type = req.params.type;
-  const query = req.query;
+exports.getProductTypeService = async (type, query) => {
   let products;
   if (query.new === "true") {
     products = await Product.find({ productType: type })
@@ -65,6 +63,7 @@ exports.getProductTypeService = async (req) => {
   }
   return products;
 };
+
 
 // get offer product service
 exports.getOfferTimerProductService = async (query) => {

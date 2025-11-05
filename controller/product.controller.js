@@ -62,18 +62,21 @@ exports.getAllProducts = async (req,res,next) => {
 }
 
 // get all products by type
-module.exports.getProductsByType = async (req,res,next) => {
+module.exports.getProductsByType = async (req, res, next) => {
   try {
-    const result = await productServices.getProductTypeService(req);
+    const type = req.params.type; // ✅ captures "beauty" from URL
+    const query = req.query; // ✅ captures "?topSellers=true" etc.
+    const result = await productServices.getProductTypeService(type, query);
     res.status(200).json({
-      success:true, 
-      data:result,
-    })
+      success: true,
+      data: result,
+    });
   } catch (error) {
-    console.log(error)
-    next(error)
+    console.log(error);
+    next(error);
   }
-}
+};
+
 
 // get offer product controller
 module.exports.getOfferTimerProducts = async (req,res,next) => {
