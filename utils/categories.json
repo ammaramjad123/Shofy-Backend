@@ -97,7 +97,7 @@
     "_id": "64240b66253d81bc860d4cf2",
     "img": "https://i.ibb.co/7yg7yg9/beauty-category-1.jpg",
     "parent": "Discover Skincare",
-    "children": ["Makeup Brush", "Face Powder"],
+    "children": ["HI", "Face Powder"],
     "productType": "beauty",
     "products": ["64250d8e253d81bc860d4d26", "6426a68a253d81bc860d5ea6"],
     "status": "Show"

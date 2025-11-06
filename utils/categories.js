@@ -133,7 +133,7 @@ const categories = [
     img: "https://i.ibb.co/7yg7yg9/beauty-category-1.jpg",
     parent: "Discover Skincare",
     children: [
-      "Makeup Brush",
+      " HI",
       "Face Powder"
     ],
     productType: "beauty",

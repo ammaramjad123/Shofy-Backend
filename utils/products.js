@@ -1879,7 +1879,7 @@ const products = [
       }
     ],
     parent: "Discover Skincare",
-    children: "Face Powder",
+    children: "HI",
     price: 85,
     discount: 5,
     quantity: 15,
