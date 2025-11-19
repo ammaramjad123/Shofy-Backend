@@ -5,7 +5,7 @@ const path = require("path");
 const cors = require("cors");
 const connectDB = require("./config/db");
 const { secret } = require("./config/secret");
-const PORT = secret.port || 7000;
+const PORT = process.env.PORT || secret.port || 7000;
 const morgan = require("morgan");
 
 // error handler
