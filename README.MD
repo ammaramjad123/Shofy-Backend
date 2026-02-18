@@ -103,7 +103,7 @@ To get started with Shofy, follow these steps:
 
 ## Server Side Live Link
 
-[Shofy Server Side Live Link](https://shofy-backend.vercel.app)
+[Shofy Server Side Live Link](https://eclipse-products-backend.vercel.app)
 
 ## Client Side Repo
 
